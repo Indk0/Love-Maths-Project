@@ -41,8 +41,8 @@ function runGame(gameType) {
  */
 function checkAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
-    let calculateCorrectAnswer=calculateCorrectAnswer();
-    let isCorrect=userAnswer === calculatedAnswer[0];
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
         alert("Hey! You got it right! :D");
