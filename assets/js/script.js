@@ -30,8 +30,8 @@ function runGame(gameType) {
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
     } else {
-        alert('Unknown game type: ${gameType}');
-        throw 'Unknown game type: ${gameType}. Aborting!';
+        alert(`Unknown game type: ${gameType}`);
+        throw `Unknown game type: ${gameType}. Aborting!`;
     }
 
 }
@@ -47,7 +47,7 @@ function checkAnswer() {
     if (isCorrect) {
         alert("Hey! You got it right! :D");
     } else {
-        alert('Wrong! You answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}!');
+        alert(`Wrong! You answered ${userAnswer}. The correct answer is ${calculatedAnswer[0]}!`);
     }
 
     runGame(calculatedAnswer[1]);
@@ -67,8 +67,8 @@ function calculateCorrectAnswer() {
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
     } else {
-        alert('Unimplemented operator ${operator}');
-        throw 'Unimplemented operator ${operator}. Aborting!';
+        alert(`Unimplemented operator ${operator}`);
+        throw `Unimplemented operator ${operator}. Aborting!`;
     }
 
 }
